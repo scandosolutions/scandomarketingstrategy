@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scando Integrated Solutions: Marketing Strategy Infographic (Optimization Focus)</title>
+    <title>Scando Integrated Solutions: Marketing Strategy Infographic (Flat Theme)</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,14 +39,12 @@
             height: 350px;
             max-height: 400px;
         }
-        /* Energetic & Playful Palette:
+        /* Flat Theme Palette (derived from Minimal):
             Primary: #118AB2 (Strong Blue)
-            Secondary/Accent 1: #06D6A0 (Teal/Green)
-            Accent 2: #FFD166 (Bright Yellow)
-            Accent 3: #FF6B6B (Vibrant Red/Pink)
-            Dark Background/Text: #073B4C (Dark Navy)
-            Light Background: #F8F9FA (Very Light Gray)
-            Text on Dark: #FFFFFF
+            Text/Dark: #073B4C (Dark Navy)
+            Background: #F8F9FA (Very Light Gray)
+            Subtle Border for separation if needed: #CBD5E1 (Tailwind gray-300) or #E2E8F0 (Tailwind gray-200)
+            White: #FFFFFF
         */
         .section-title {
             color: #118AB2; /* Strong Blue */
@@ -54,71 +52,75 @@
         .card {
             background-color: #FFFFFF;
             border-radius: 0.5rem; /* Rounded corners for cards */
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            /* box-shadow: 0 2px 4px rgba(0,0,0,0.05); */ /* Shadow removed for flat theme */
+            border: 1px solid #E2E8F0; /* Adding a light border for definition in flat theme */
             padding: 1.5rem;
             margin-bottom: 1.5rem;
         }
         .highlight-stat {
-            color: #FF6B6B; /* Vibrant Red/Pink */
+            color: #118AB2; /* Strong Blue */
         }
-        .icon-placeholder { /* Used for emoji icons in stat cards and audience profile */
+        .icon-placeholder { 
             font-size: 2rem;
-            color: #06D6A0; /* Teal/Green */
+            color: #118AB2; 
             margin-bottom: 0.5rem;
         }
-        .service-icon { /* Specific for the "Scando Method" section icon */
-            font-size: 2.5rem; /* Larger icon for service cards */
+        .service-icon { 
+            font-size: 2.5rem; 
             margin-bottom: 1rem;
-            color: #118AB2; /* Match section title blue */
+            color: #118AB2; 
         }
         .method-step-card {
-            background-color: #E0F2FE; /* Light blue background for steps */
-            border-left: 4px solid #118AB2; /* Blue accent */
-            border-radius: 0.375rem; /* Slightly less rounded than main cards */
+            background-color: #FFFFFF; 
+            border-left: 4px solid #118AB2; /* Blue accent line remains key */
+            border-top: 1px solid #E2E8F0; /* Light top border for separation */
+            border-right: 1px solid #E2E8F0; /* Light right border */
+            border-bottom: 1px solid #E2E8F0; /* Light bottom border */
+            border-radius: 0.375rem; 
+            padding: 1rem; 
+            /* box-shadow: 0 1px 2px rgba(0,0,0,0.03); */ /* Shadow removed for flat theme */
         }
         .timeline-item {
             position: relative;
-            padding-left: 2.5rem; /* Space for line and dot */
-            margin-bottom: 1.5rem; /* Reduced margin for denser list */
+            padding-left: 2.5rem; 
+            margin-bottom: 1.5rem; 
         }
         .timeline-item ul {
-            padding-left: 0.5rem; /* Indent sub-bullets slightly */
-            margin-top: 0.25rem; /* Small space above sub-bullets */
+            padding-left: 0.5rem; 
+            margin-top: 0.25rem; 
         }
         .timeline-item ul li {
-            font-size: 0.8rem; /* Smaller font for sub-bullets */
-            line-height: 1.3; /* Adjust line height for sub-bullets */
-            margin-bottom: 0.25rem; /* Space between sub-bullets */
+            font-size: 0.8rem; 
+            line-height: 1.3; 
+            margin-bottom: 0.25rem; 
         }
         .timeline-dot {
             position: absolute;
             left: 0;
-            top: 0.25rem; /* Adjust to align with text */
-            width: 1.25rem; /* Slightly larger dot */
+            top: 0.25rem; 
+            width: 1.25rem; 
             height: 1.25rem;
             border-radius: 50%;
-            background-color: #118AB2; /* Strong Blue */
-            border: 3px solid #F8F9FA; /* Border to make it pop from line */
+            background-color: #118AB2; 
+            border: 3px solid #F8F9FA; 
         }
         .timeline-line {
             position: absolute;
-            left: 0.5625rem; /* Center of the dot (1.25rem / 2) - (3px / 2) -- adjusted for visual centering */
-            top: 1.25rem; /* Start below the dot */
-            bottom: -0.75rem; /* Adjust for denser list, extend slightly below last text */
-            width: 3px; /* Thicker line */
-            background-color: #118AB2; /* Strong Blue */
+            left: 0.5625rem; 
+            top: 1.25rem; 
+            bottom: -0.75rem; 
+            width: 3px; 
+            background-color: #118AB2; 
         }
         .timeline-item:last-child .timeline-line {
-            display: none; /* No line after the last item */
+            display: none; 
         }
-        /* Ensure all interactive elements have rounded corners */
         button, input, select, textarea {
-            border-radius: 0.375rem; /* Default rounded corners for form elements */
+            border-radius: 0.375rem; 
         }
-        header, footer { /* Assuming a footer might be added later */
-             border-radius: 0rem; /* Headers and footers might not need rounding, or specific rounding */
+        header, footer {
+             border-radius: 0rem; 
         }
-        /* General rounded corners for other elements if not covered by card or specific classes */
         .rounded-lg { border-radius: 0.5rem; }
         .rounded-md { border-radius: 0.375rem; }
         .rounded-full { border-radius: 9999px; }
@@ -127,27 +129,11 @@
 </head>
 <body>
     <!-- 
-    Infographic Narrative & Structure Plan (Revised for Optimization Focus & Broader Client Profile with Detailed 2025 Initiatives):
-    1. Hero Section: Title, Subtitle, Brief Intro to "Scando Method" for SMEs.
-    2. Our Foundation: Founded year, Client Retention, Odoo Experience, Odoo Partner Status. Key USPs.
-    3. Our Goals: Marketing objectives (Enable efficiency, Maximize ROI, Attract SMEs, Elevate capabilities, Lead in agile ERP).
-    4. Reaching Our Audience: Ideal Client Profile (SMEs in Egypt - sectors, needs), Key Pain Points addressed.
-    5. Our Core Message: Main tagline, supporting messages emphasizing agile, incremental, results-driven ERP.
-    6. Strategic Pillars: Targeted Digital Marketing, Agile ERP Content Leadership, Value-Driven Partnerships, Agile Sales Enablement.
-    7. Our Core Offering: Detailed breakdown of the "Scando Method" (6 steps: Assessment, Tailored Odoo, KM, Vigor Scoring, Training, Continuous Optimization). Ideal for whom.
-    8. 2025 Initiatives (Q3 & Q4): Detailed marketing activities for launching and promoting the "Scando Method."
-        - Q3: Website Overhaul, Content Drive, Sales & LinkedIn Alignment.
-        - Q4: Lead Magnet Launch, LinkedIn Ad Campaign, Webinar & Partnerships.
-    9. Looking Ahead (2026 Goals): Strategic objectives for establishing "Scando Method" leadership.
-    10. Measuring Our Ascent (KPIs): Key metrics to track success (Adoption, Satisfaction, Time-to-Value, etc.) with an illustrative chart.
-    (Footer Removed as per original comment)
-
-    NO SVG graphics were used (using Emojis as placeholders).
-    NO Mermaid JS was used.
-    Chart.js is used for KPI visualization.
-    Tailwind CSS is used for styling.
-    Google Fonts (Inter) is used.
-    All elements have rounded corners as per general instruction.
+    Infographic Narrative & Structure Plan:
+    Flat Theme Adjustments:
+    - Removed all box-shadows from .card and .method-step-card.
+    - Added light borders to .card and .method-step-card for definition in the absence of shadows.
+    - Color palette and other structural elements remain consistent with the previous minimal design.
     -->
 
     <header class="bg-[#073B4C] text-white py-12 px-4 text-center">
@@ -200,36 +186,31 @@
             <p class="text-lg text-center max-w-3xl mx-auto mb-10">Our marketing strategy is focused on empowering SMEs with efficient, agile ERP solutions, whether implementing anew or optimizing existing systems.</p>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <div class="card flex items-start">
-                    <span class="text-3xl mr-4 text-[#06D6A0]">🚀</span>
-                    <div>
+                    <span class="text-3xl mr-4 text-[#118AB2]">🚀</span> <div>
                         <h3 class="text-xl font-semibold text-[#073B4C] mb-1">Enable Efficient Operations</h3>
                         <p class="text-gray-600">Help clients achieve streamlined workflows and improved efficiency through tailored ERP capabilities.</p>
                     </div>
                 </div>
                 <div class="card flex items-start">
-                    <span class="text-3xl mr-4 text-[#06D6A0]">💰</span>
-                    <div>
+                    <span class="text-3xl mr-4 text-[#118AB2]">💰</span> <div>
                         <h3 class="text-xl font-semibold text-[#073B4C] mb-1">Maximize Value & ROI</h3>
                         <p class="text-gray-600">Ensure significant returns on ERP investments via our incremental and optimization-focused approach.</p>
                     </div>
                 </div>
                  <div class="card flex items-start">
-                    <span class="text-3xl mr-4 text-[#06D6A0]">🎯</span>
-                    <div>
+                    <span class="text-3xl mr-4 text-[#118AB2]">🎯</span> <div>
                         <h3 class="text-xl font-semibold text-[#073B4C] mb-1">Attract Ready-to-Evolve SMEs</h3>
                         <p class="text-gray-600">Generate leads from businesses seeking effective, manageable ERP solutions or enhancements.</p>
                     </div>
                 </div>
                 <div class="card flex items-start">
-                    <span class="text-3xl mr-4 text-[#06D6A0]">📈</span>
-                    <div>
+                    <span class="text-3xl mr-4 text-[#118AB2]">📈</span> <div>
                         <h3 class="text-xl font-semibold text-[#073B4C] mb-1">Elevate Digital Capabilities</h3>
                         <p class="text-gray-600">Guide clients in incrementally improving their process maturity and system utilization with the "Scando Method".</p>
                     </div>
                 </div>
                 <div class="card flex items-start">
-                    <span class="text-3xl mr-4 text-[#06D6A0]">🧠</span>
-                    <div>
+                    <span class="text-3xl mr-4 text-[#118AB2]">🧠</span> <div>
                         <h3 class="text-xl font-semibold text-[#073B4C] mb-1">Lead in Agile ERP Solutions</h3>
                         <p class="text-gray-600">Position Scando as the go-to expert for agile ERP implementation and optimization in Egypt.</p>
                     </div>
@@ -240,8 +221,11 @@
         <section id="audience" class="mb-12">
             <h2 class="text-3xl font-bold section-title mb-8 text-center">Reaching Our Audience: SMEs Seeking Smart ERP Evolution</h2>
             <p class="text-lg text-center max-w-3xl mx-auto mb-10">We target Small to Medium Enterprises in Egypt ready for an efficient, incremental approach to ERP. This includes those with existing systems (Odoo or other), those who've faced implementation challenges, or those starting fresh and wary of "big bang" projects.</p>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch"> <div class="card flex flex-col"> <h3 class="text-xl font-semibold text-[#073B4C] mb-3 text-center">Our Ideal Client Profile</h3>
-                     <div class="icon-placeholder text-center text-6xl text-[#118AB2] mb-auto">🏢</div> <p class="text-gray-700 text-center mt-4">SMEs in Egypt (Wholesale/Retail, Manufacturing, Services) seeking to implement or optimize ERP capabilities through an agile, phased approach that delivers continuous value.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch"> 
+                <div class="card flex flex-col"> 
+                    <h3 class="text-xl font-semibold text-[#073B4C] mb-3 text-center">Our Ideal Client Profile</h3>
+                     <div class="icon-placeholder text-center text-6xl text-[#118AB2] mb-auto">🏢</div> 
+                     <p class="text-gray-700 text-center mt-4">SMEs in Egypt (Wholesale/Retail, Manufacturing, Services) seeking to implement or optimize ERP capabilities through an agile, phased approach that delivers continuous value.</p>
                 </div>
                 <div class="card">
                     <h4 class="text-lg font-semibold text-[#118AB2] mb-2">Key Needs & Pain Points We Address:</h4>
@@ -261,7 +245,7 @@
         <section id="messages" class="mb-12">
             <h2 class="text-3xl font-bold section-title mb-8 text-center">Our Core Message: Agile ERP, Tangible Results, Day One.</h2>
             <p class="text-lg text-center max-w-3xl mx-auto mb-10">Our messaging highlights the efficiency, manageability, and immediate benefits of the "Scando Method" for all SMEs on their ERP journey.</p>
-            <div class="card bg-[#073B4C] text-white p-8 rounded-lg"> <p class="text-3xl font-semibold text-center mb-4 text-[#FFD166]">"Transform Your Business Incrementally. The 'Scando Method' Delivers Agile ERP Solutions & Sustainable SME Growth."</p>
+            <div class="card bg-[#073B4C] text-white p-8 rounded-lg border-0"> <p class="text-3xl font-semibold text-center mb-4" style="color: #FFD166;">"Transform Your Business Incrementally. The 'Scando Method' Delivers Agile ERP Solutions & Sustainable SME Growth."</p> 
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
                 <div class="card">
@@ -309,37 +293,37 @@
         <section id="core-services" class="mb-12">
             <h2 class="text-3xl font-bold section-title mb-8 text-center">Our Core Offering: Agile Transformation & Optimization with the "Scando Method"</h2>
             <p class="text-lg text-center max-w-3xl mx-auto mb-10">We provide a holistic service for ERP implementation and ongoing optimization, meticulously designed to enhance your business capabilities and drive sustainable growth. This is powered by our proprietary "Scando Method":</p>
-            <div class="card"> <div class="flex flex-col items-center text-center mb-6">
+            <div class="card"> 
+                <div class="flex flex-col items-center text-center mb-6">
                     <div class="service-icon">🧩</div>
                     <h3 class="text-2xl font-semibold text-[#073B4C]">The Scando Method: An Agile & Incremental Approach</h3>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <div class="card method-step-card p-4">
-                        <h4 class="font-semibold text-lg text-[#073B4C] mb-1">1. Assessment & Process Discovery</h4>
+                    <div class="method-step-card p-4"> <h4 class="font-semibold text-lg text-[#073B4C] mb-1">1. Assessment & Process Discovery</h4>
                         <p class="text-sm text-gray-600">Exhaustive analysis of current operations, workflows, systems (if any), and performance metrics. PCF utilization to categorize and measure digital maturity, establishing KPIs aligned with your strategic goals for incremental improvement.</p>
                     </div>
-                    <div class="card method-step-card p-4">
+                    <div class="method-step-card p-4">
                         <h4 class="font-semibold text-lg text-[#073B4C] mb-1">2. Tailored Odoo ERP Implementation/Enhancement</h4>
                         <p class="text-sm text-gray-600">Leveraging Odoo's modularity, our Business Matter Experts design, implement, or re-engineer and optimize processes in phases, configuring modules and ensuring seamless integration for enhanced usability and functionality.</p>
                     </div>
-                    <div class="card method-step-card p-4">
+                    <div class="method-step-card p-4">
                         <h4 class="font-semibold text-lg text-[#073B4C] mb-1">3. Knowledge Management Integration</h4>
                         <p class="text-sm text-gray-600">Implementing tools and practices within Odoo to document critical processes and decisions, creating a centralized knowledge base to foster collaboration and reduce dependency as your system evolves.</p>
                     </div>
-                    <div class="card method-step-card p-4">
+                    <div class="method-step-card p-4">
                         <h4 class="font-semibold text-lg text-[#073B4C] mb-1">4. Digital Maturity Scoring (Vigor)</h4>
                         <p class="text-sm text-gray-600">Utilizing our proprietary tool, Vigor, to assign scores to each process based on functionality, implementation, business benefit, and user adoption, revealing areas for prioritized, incremental improvements.</p>
                     </div>
-                    <div class="card method-step-card p-4">
+                    <div class="method-step-card p-4">
                         <h4 class="font-semibold text-lg text-[#073B4C] mb-1">5. Training & Change Management</h4>
                         <p class="text-sm text-gray-600">Providing hands-on, role-specific training for each implemented phase and deploying change management strategies to ensure team proficiency and smooth adoption of new or optimized processes.</p>
                     </div>
-                    <div class="card method-step-card p-4">
+                    <div class="method-step-card p-4">
                         <h4 class="font-semibold text-lg text-[#073B4C] mb-1">6. Continuous Optimization & Evolution Cycle</h4>
                         <p class="text-sm text-gray-600">Post initial phases, we provide ongoing monitoring, system updates, performance reviews, and expert consultations to ensure your Odoo system continually evolves with your business, keeping it efficient and competitive.</p>
                     </div>
                 </div>
-                <div class="bg-gray-100 p-4 rounded-md mt-6 text-center"> <p class="font-semibold text-lg text-[#073B4C]">Ideal for:</p>
+                <div class="bg-gray-100 p-4 rounded-md mt-6 text-center border border-gray-200"> <p class="font-semibold text-lg text-[#073B4C]">Ideal for:</p>
                     <p class="text-md text-gray-700">SMEs seeking a manageable, phased approach to ERP implementation or optimization. Perfect for businesses wanting to avoid "big bang" projects, those with limited initial readiness, or those aiming for continuous, incremental improvements and quick wins from their ERP investment.</p>
                 </div>
             </div>
@@ -373,7 +357,8 @@
                             <li>Develop social media content calendar with snippets from blogs/case studies for LinkedIn.</li>
                         </ul>
                     </div>
-                    <div class="timeline-item"> <div class="timeline-dot"></div>
+                    <div class="timeline-item"> 
+                        <div class="timeline-dot"></div>
                         <h4 class="font-semibold text-lg text-[#073B4C] mb-1">Sales & LinkedIn Messaging Alignment</h4>
                         <ul class="list-disc list-inside text-gray-600 space-y-1">
                             <li>Revamp sales presentation deck to lead with the "Scando Method," its phased benefits, and case study proof.</li>
@@ -386,9 +371,8 @@
                 </div>
 
                 <div class="card">
-                    <h3 class="text-2xl font-semibold text-[#06D6A0] mb-6">Q4 2025: Engagement & Lead Generation for Agile Solutions</h3>
-                     <div class="timeline-item">
-                        <div class="timeline-dot" style="background-color: #06D6A0;"></div> <div class="timeline-line" style="background-color: #06D6A0;"></div> <h4 class="font-semibold text-lg text-[#073B4C] mb-1">Launch "ERP Readiness & Agile Fit" Lead Magnet</h4>
+                    <h3 class="text-2xl font-semibold text-[#118AB2] mb-6">Q4 2025: Engagement & Lead Generation for Agile Solutions</h3> <div class="timeline-item">
+                        <div class="timeline-dot"></div> <div class="timeline-line"></div> <h4 class="font-semibold text-lg text-[#073B4C] mb-1">Launch "ERP Readiness & Agile Fit" Lead Magnet</h4>
                         <ul class="list-disc list-inside text-gray-600 space-y-1">
                             <li>Develop interactive quiz/checklist: "Is Agile ERP Right for Your SME?" leading to personalized insights.</li>
                             <li>Create comprehensive PDF Guide: "The SME's Playbook for De-Risking ERP: Agile Implementation & Optimization with Scando."</li>
@@ -397,8 +381,8 @@
                         </ul>
                     </div>
                     <div class="timeline-item">
-                        <div class="timeline-dot" style="background-color: #06D6A0;"></div>
-                        <div class="timeline-line" style="background-color: #06D6A0;"></div>
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-line"></div>
                         <h4 class="font-semibold text-lg text-[#073B4C] mb-1">Multi-Tiered LinkedIn Ad Campaign</h4>
                         <ul class="list-disc list-inside text-gray-600 space-y-1">
                             <li>Ad Set 1 (Awareness): Target SME decision-makers in Egypt with pain-point focused messaging, introducing the "Scando Method."</li>
@@ -407,7 +391,8 @@
                             <li>Conduct A/B testing for ad creatives, copy, and targeting parameters.</li>
                         </ul>
                     </div>
-                    <div class="timeline-item"> <div class="timeline-dot" style="background-color: #06D6A0;"></div>
+                    <div class="timeline-item"> 
+                        <div class="timeline-dot"></div>
                         <h4 class="font-semibold text-lg text-[#073B4C] mb-1">Host Webinar & Cultivate Strategic Partnerships</h4>
                         <ul class="list-disc list-inside text-gray-600 space-y-1">
                             <li>Execute webinar: "De-Risk Your ERP Project: The Power of Incremental Implementation with Scando Method" (promote heavily, record for on-demand access).</li>
@@ -424,43 +409,37 @@
             <p class="text-lg text-center max-w-3xl mx-auto mb-10">Our 2026 goals will focus on establishing the "Scando Method" as the leading agile ERP solution for SMEs in Egypt, driving adoption and showcasing its versatility.</p>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <div class="card flex items-start">
-                    <span class="text-3xl mr-4 text-[#FFD166]">🏆</span>
-                    <div>
+                    <span class="text-3xl mr-4 text-[#118AB2]">🏆</span> <div>
                         <h3 class="text-xl font-semibold text-[#073B4C] mb-1">Lead in Agile ERP for SMEs</h3>
                         <p class="text-gray-600">Position the "Scando Method" as the top choice for SMEs seeking flexible, incremental ERP implementations and optimizations.</p>
                     </div>
                 </div>
                 <div class="card flex items-start">
-                    <span class="text-3xl mr-4 text-[#FFD166]">📈</span>
-                    <div>
+                    <span class="text-3xl mr-4 text-[#118AB2]">📈</span> <div>
                         <h3 class="text-xl font-semibold text-[#073B4C] mb-1">Showcase Diverse Success Stories</h3>
                         <p class="text-gray-600">Build a rich portfolio of case studies demonstrating the "Scando Method's" success across various SME starting points (new, existing, troubled projects).</p>
                     </div>
                 </div>
                 <div class="card flex items-start">
-                    <span class="text-3xl mr-4 text-[#FFD166]">🤝</span>
-                    <div>
+                    <span class="text-3xl mr-4 text-[#118AB2]">🤝</span> <div>
                         <h3 class="text-xl font-semibold text-[#073B4C] mb-1">Market Tiered "Scando Method" Packages</h3>
                         <p class="text-gray-600">Promote tiered service packages for the "Scando Method," catering to different levels of SME complexity and scope (e.g., based on business lines).</p>
                     </div>
                 </div>
                 <div class="card flex items-start">
-                    <span class="text-3xl mr-4 text-[#FFD166]">🎓</span>
-                    <div>
+                    <span class="text-3xl mr-4 text-[#118AB2]">🎓</span> <div>
                         <h3 class="text-xl font-semibold text-[#073B4C] mb-1">Highlight "Vigor" for Process Insight</h3>
                         <p class="text-gray-600">Emphasize our "Vigor" tool in assessing digital maturity and guiding the incremental improvements within the "Scando Method."</p>
                     </div>
                 </div>
                 <div class="card flex items-start">
-                    <span class="text-3xl mr-4 text-[#FFD166]">🌐</span>
-                    <div>
+                    <span class="text-3xl mr-4 text-[#118AB2]">🌐</span> <div>
                         <h3 class="text-xl font-semibold text-[#073B4C] mb-1">Grow Client Base for "Scando Method"</h3>
                         <p class="text-gray-600">Significantly expand the adoption of the "Scando Method" by SMEs through effective, targeted marketing.</p>
                     </div>
                 </div>
                  <div class="card flex items-start">
-                    <span class="text-3xl mr-4 text-[#FFD166]">💡</span>
-                    <div>
+                    <span class="text-3xl mr-4 text-[#118AB2]">💡</span> <div>
                         <h3 class="text-xl font-semibold text-[#073B4C] mb-1">Continuously Evolve the Method</h3>
                         <p class="text-gray-600">Refine the "Scando Method" with latest Odoo capabilities and agile best practices to maximize SME success.</p>
                     </div>
@@ -497,183 +476,144 @@
     <script>
         // Function to wrap long labels for Chart.js
         function wrapLabel(str, maxWidth) {
-            if (typeof str !== 'string') return [String(str)]; // Return as array if not string
-            if (str.length <= maxWidth) return [str]; // Return as array if short enough
+            if (typeof str !== 'string') return [String(str)]; 
+            if (str.length <= maxWidth) return [str]; 
 
             const words = str.split(' ');
             let lines = [];
             let currentLine = words[0];
 
             for (let i = 1; i < words.length; i++) {
-                if ((currentLine + " " + words[i]).length > maxWidth && currentLine.length > 0) { // also check currentLine is not empty
+                if ((currentLine + " " + words[i]).length > maxWidth && currentLine.length > 0) { 
                     lines.push(currentLine);
                     currentLine = words[i];
                 } else {
-                    if (currentLine.length === 0) { // if currentLine is empty, start with the word
+                    if (currentLine.length === 0) { 
                         currentLine = words[i];
                     } else {
                         currentLine += " " + words[i];
                     }
                 }
             }
-            lines.push(currentLine); // Push the last line
+            lines.push(currentLine); 
             return lines;
         }
         
-        // Callback function for chart tooltips to correctly display multi-line labels
         const chartTooltipTitleCallback = (tooltipItems) => {
             const item = tooltipItems[0];
-            // Access the original label which might be an array of strings
             let label = item.chart.data.labels[item.dataIndex]; 
             if (Array.isArray(label)) {
-                return label.join(' '); // Join array elements for tooltip title
+                return label.join(' '); 
             }
-            return label; // Return as is if not an array
+            return label; 
         };
 
-        // Common options for all charts for consistency
         const commonChartOptions = {
             responsive: true,
-            maintainAspectRatio: false, // Important for custom height via container
+            maintainAspectRatio: false, 
             plugins: {
                 legend: {
-                    position: 'bottom', // Position legend at the bottom
+                    position: 'bottom', 
                     labels: {
-                        color: '#073B4C', // Dark Navy text for legend
+                        color: '#073B4C', 
                         font: { size: 12 }
                     }
                 },
                 tooltip: {
-                    callbacks: { title: chartTooltipTitleCallback }, // Use custom title callback
-                    backgroundColor: '#073B4C', // Dark Navy background for tooltip
-                    titleColor: '#FFFFFF', // White title text
-                    bodyColor: '#F8F9FA', // Light gray body text
-                    borderColor: '#118AB2', // Strong Blue border
+                    callbacks: { title: chartTooltipTitleCallback }, 
+                    backgroundColor: '#073B4C', 
+                    titleColor: '#FFFFFF', 
+                    bodyColor: '#F8F9FA', 
+                    borderColor: '#118AB2', 
                     borderWidth: 1,
-                    padding: 10, // Padding within tooltip
-                    cornerRadius: 6, // Rounded corners for tooltip
-                    boxPadding: 3 // Padding for the color box
+                    padding: 10, 
+                    cornerRadius: 6, 
+                    boxPadding: 3 
                 }
             }
         };
         
-        // Check if the audience chart canvas element exists before creating the chart
-        // This chart was in the original HTML but not explicitly requested to be kept or removed.
-        // It's being kept for now. If it was meant to be removed, the user can specify.
         const audienceChartCanvas = document.getElementById('audienceChart');
         if (audienceChartCanvas) {
+            // This chart canvas element might not exist in the HTML if it was removed.
+            // The script for it is commented out to prevent errors.
+            /*
             const audienceCtx = audienceChartCanvas.getContext('2d');
             new Chart(audienceCtx, {
-                type: 'bar', // Bar chart type
+                // ... audience chart configuration ...
+            });
+            */
+        }
+
+        const kpiCtx = document.getElementById('kpiChart').getContext('2d');
+        if (kpiCtx) { 
+            new Chart(kpiCtx, {
+                type: 'bar', 
                 data: {
-                    // Apply label wrapping to each label
-                    labels: [
-                        wrapLabel('SMEs Needing New ERP (Agile Approach)',16), 
-                        wrapLabel('SMEs With Existing Systems (Incl. Odoo) for Optimization',16), 
-                        wrapLabel('SMEs Recovering From Failed Implementations',16)
+                    labels: [ 
+                        wrapLabel('"Scando Method" Adoption Rate', 16), 
+                        wrapLabel('Client Satisfaction (Agile Process)', 16), 
+                        wrapLabel('Time-to-Value (Initial Phases)', 16)
                     ],
                     datasets: [{
-                        label: 'Ideal Client Starting Points', // Dataset label
-                        data: [40, 45, 15], // Illustrative percentage distribution
-                        backgroundColor: ['#118AB2', '#06D6A0', '#FFD166'], // Colors for bars
+                        label: 'Illustrative Agile ERP KPI Targets',
+                        data: [25, 90, 30], 
+                        backgroundColor: ['#118AB2', '#47AADD', '#7DC8E8'], 
+                        borderColor: ['#0D6E8E', '#3B8AB3', '#6BAABE'], 
+                        borderWidth: 1
                     }]
                 },
                 options: {
-                    ...commonChartOptions, // Spread common options
-                    indexAxis: 'y', // Horizontal bar chart
+                    ...commonChartOptions, 
+                    indexAxis: 'y', 
+                    scales: {
+                        x: { 
+                            beginAtZero: true,
+                            max: 100, 
+                            ticks: { 
+                                color: '#073B4C', 
+                                font: {size: 10},
+                                callback: function(value) {return value + '%'} 
+                            }, 
+                            grid: { color: '#E0E0E0' }
+                        },
+                        y: { 
+                            ticks: { 
+                                color: '#073B4C', 
+                                font: {size: 10, weight: '500'} 
+                            },
+                            grid: { display: false } 
+                        }
+                    },
                     plugins: {
-                         ...commonChartOptions.plugins, // Spread common plugin options
-                        title: { // Chart title configuration
+                        ...commonChartOptions.plugins, 
+                        title: { 
                             display: true,
-                            text: 'Client Profiles for "Scando Method"',
+                            text: 'Example Agile ERP KPI Targets',
                             color: '#073B4C',
                             font: { size: 16, weight: 'bold' },
                             padding: { bottom: 15 }
                         },
-                        legend: { display: false } // Hide legend for this specific chart as data is clear
-                    },
-                    scales: { // Axis configuration
-                        x: { 
-                            ticks: { color: '#073B4C' }, // X-axis tick color
-                            grid: { color: '#E0E0E0' } // X-axis grid line color
-                        },
-                        y: { 
-                            ticks: { color: '#073B4C', font: {size: 10} }, // Y-axis tick color and font size
-                            grid: { display: false } // Hide Y-axis grid lines
+                        legend: { display: false }, 
+                        tooltip: { 
+                            callbacks: {
+                                ...commonChartOptions.plugins.tooltip.callbacks, 
+                                label: function(context) { 
+                                    let label = context.dataset.label || '';
+                                    if (label) {
+                                        label += ': ';
+                                    }
+                                    if (context.parsed.x !== null) { 
+                                        label += context.parsed.x + '%';
+                                    }
+                                    return label;
+                                }
+                            }
                         }
                     }
                 }
             });
         }
-
-        // KPI Chart (Bar Chart)
-        const kpiCtx = document.getElementById('kpiChart').getContext('2d');
-        new Chart(kpiCtx, {
-            type: 'bar', // Bar chart
-            data: {
-                labels: [ // Apply label wrapping
-                    wrapLabel('"Scando Method" Adoption Rate', 16), 
-                    wrapLabel('Client Satisfaction (Agile Process)', 16), 
-                    wrapLabel('Time-to-Value (Initial Phases)', 16)
-                ],
-                datasets: [{
-                    label: 'Illustrative Agile ERP KPI Targets',
-                    data: [25, 90, 30], // Example target values (e.g., 25% growth, 90% satisfaction, 30% reduction)
-                    backgroundColor: ['#FF6B6B', '#FFD166', '#06D6A0'], // Energetic colors for bars
-                    borderColor: ['#D95B5B', '#D9B05A', '#05B58A'], // Darker borders for bars
-                    borderWidth: 1
-                }]
-            },
-            options: {
-                ...commonChartOptions, // Spread common options
-                 indexAxis: 'y', // Horizontal bar chart for better label readability
-                 scales: {
-                    x: { // X-axis configuration (now represents values)
-                        beginAtZero: true,
-                        max: 100, // Assuming KPIs are percentage based or can be scaled to 100
-                        ticks: { 
-                            color: '#073B4C', 
-                            font: {size: 10},
-                            callback: function(value) {return value + '%'} // Add '%' suffix to ticks
-                        }, 
-                        grid: { color: '#E0E0E0' }
-                    },
-                    y: { // Y-axis configuration (now represents categories)
-                        ticks: { 
-                            color: '#073B4C', 
-                            font: {size: 10, weight: '500'} // Slightly bolder font for KPI names
-                        },
-                        grid: { display: false } // No grid lines on Y-axis
-                    }
-                },
-                plugins: {
-                     ...commonChartOptions.plugins, // Spread common plugin options
-                    title: { // Chart title
-                        display: true,
-                        text: 'Example Agile ERP KPI Targets',
-                        color: '#073B4C',
-                        font: { size: 16, weight: 'bold' },
-                        padding: { bottom: 15 }
-                    },
-                    legend: { display: false }, // Legend not really needed for a single dataset with clear labels
-                    tooltip: { // Ensure tooltip also shows '%' for this chart
-                        callbacks: {
-                            ...commonChartOptions.plugins.tooltip.callbacks, // Keep existing title callback
-                            label: function(context) { // Customize label in tooltip
-                                let label = context.dataset.label || '';
-                                if (label) {
-                                    label += ': ';
-                                }
-                                if (context.parsed.x !== null) { // For horizontal bar, value is on x-axis
-                                    label += context.parsed.x + '%';
-                                }
-                                return label;
-                            }
-                        }
-                    }
-                }
-            }
-        });
     </script>
 </body>
 </html>
